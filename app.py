@@ -7,7 +7,7 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 
 @app.route("/")
 def hello():
-    return "Hello Wolrd!"
+    return app.config["SECRET_KEY"]
 
 @app.route("/<name>")
 def hello_name(name):
