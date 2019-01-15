@@ -1,6 +1,4 @@
 env
 .vscode
-secrets.json
 __pycache__
 .env
-.gitsecret/keys/random_seed
