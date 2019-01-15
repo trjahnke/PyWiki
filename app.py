@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return Config.SECRET_KEY
+    return APP_SETTINGS
 
 @app.route("/<name>")
 def hello_name(name):
