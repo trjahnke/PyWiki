@@ -1,5 +1,5 @@
 from flask import Flask
-from config import *
+import config
 import os
 
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 
 @app.route("/")
 def hello():
-    return os.environ["SECRET_KEY"]
+    return app.config['SECRET_KEY']
 
 @app.route("/<name>")
 def hello_name(name):
