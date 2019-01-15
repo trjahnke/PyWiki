@@ -1,7 +1,7 @@
 import os
 import json
 
-with open("secrets.json", "r") as f:
+with open("secrets.json") as f:
     config = json.load(f)
     
 basedir = os.path.abspath(os.path.dirname(__file__))
