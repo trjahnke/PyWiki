@@ -10,7 +10,7 @@ class Config(object):
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
-    #SECRET_KEY = config["DEFAULT"]["SECRET_KEY"]
+    SECRET_KEY = config["DEFAULT"]["SECRET_KEY"]
 
 class DevConfig(Config):
     DEBUG = True
