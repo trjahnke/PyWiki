@@ -1,11 +1,13 @@
 from flask import Flask
-from config import Config
+from config import *
+import os
 
 app = Flask(__name__)
+app.config.from_object(os.environ['APP_SETTINGS'])
 
 @app.route("/")
 def hello():
-    return APP_SETTINGS
+    return os.environ["APP_SETTINGS"]
 
 @app.route("/<name>")
 def hello_name(name):
