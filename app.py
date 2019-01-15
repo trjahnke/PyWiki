@@ -1,10 +1,11 @@
 from flask import Flask
+from config import Config
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return Config.SECRET_KEY
 
 @app.route("/<name>")
 def hello_name(name):
