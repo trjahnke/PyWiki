@@ -6,5 +6,5 @@ Flask app that utilities that wikipedia api; not sure what i'm going to do with 
 - add this to Travis CI for build tests
     - build tests for this
 - update this with Coveralls
-- setup env vars for heuroku deploys and local testing
+- setup env vars for heroku deploys and local testing
 - setup a database to store queries 
