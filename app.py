@@ -4,16 +4,11 @@ import os
 import wikipedia
 
 app = Flask(__name__)
-app.config.from_object(os.environ['APP_SETTINGS'])
-
-def wikiwom():
-    test = wikipedia.search("dog")
-    for x in test:
-        return x
+#app.config.from_object(os.environ['APP_SETTINGS'])
 
 @app.route("/")
 def hello():
-    return hello()
+    return "Welcome!"
 
 @app.route("/<name>")
 def hello_name(name):
