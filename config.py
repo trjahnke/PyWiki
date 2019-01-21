@@ -13,13 +13,15 @@ class DevConfig(Config): #used as the local env
     DEVELOPMENT = True
     SECRET_KEY = "8ccd11b11afa14777a196a0833f220859f33dd7fb27a3831"
 
-class StageConfig(Config):
-    DEBUG = True
-    SECRET_KEY = os.environ["SECRET_KEY"] #is set within an env var in Heroku
+#class StageConfig(Config):
+#    DEBUG = True
+   #is set within an env var in Heroku
+#    SECRET_KEY = os.environ["SECRET_KEY"] 
 
-class ProdConfig(Config):
-    DEBUG = False
-    SECRET_KEY = os.environ["SECRET_KEY"] #is set within an env var in Heroku
+#class ProdConfig(Config):
+#    DEBUG = False
+    #is set within an env var in Heroku
+#    SECRET_KEY = os.environ["SECRET_KEY"] 
 
 
 
